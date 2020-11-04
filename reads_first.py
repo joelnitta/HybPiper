@@ -759,7 +759,7 @@ def main():
         if exitcode:
             return
     
-    sys.stderr.write("Generated sequences from {} genes!\n".format(len(open("genes_with_seqs.txt").readlines())))
+    # sys.stderr.write("Generated sequences from {} genes!\n".format(len(open("genes_with_seqs.txt").readlines())))
     
     paralog_warnings = [x for x in os.listdir(".") if os.path.isfile(os.path.join(x,basename,"paralog_warning.txt"))]
     with open("genes_with_paralog_warnings.txt",'w') as pw:
